@@ -1,23 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <style>
         body {
             display: flex;
             justify-content: center;
             align-items: center;
+            background-color: lightblue;
         }
+
         .card-container {
             border-radius: 30px;
+            background-color: white;
+        }
+
+        .card-photo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .card-cover-photo {
+            background-image: url('./Assets/cover.png');
+            background-size: cover;
+            background-position: center;
+            height: 250px;
+            width: 400px;
+        }
+
+        .card-profile-photo {
+            background-image: url('./Assets/profile.png');
+            background-size: cover;
+            background-position: center;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: -70px;
+            border: 10px solid white;
+        }
+
+        .card-body {
+            background-color: white;
+            padding: 0 40px;
+        }
+
+        .card-title {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 80px;
+        }
+
+        .card-title .main-title {
+            font-family: Roboto;
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 100%;
+            letter-spacing: 0px;
+            text-align: center;
+        }
+
+        .card-title .sub-title {
+            font-family: Roboto;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 100%;
+            letter-spacing: 0px;
+            text-align: center;
+            color: #9E9E9E;
+            margin-top: 12px;
+        }
+
+        .card-btns {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 24px;
+            gap: 24px;
+        }
+
+        .card-btns button.btn {
+            height: 50px;
+            border-radius: 15px;
+            font-family: Roboto;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 100%;
+            letter-spacing: 0px;
+            text-align: center;
+            border: none;
+            cursor: pointer;
+            flex: 1;
+        }
+
+        .card-btns button.btn-primary {
+            background-color: #484587;
+            color: white;
+        }
+
+        .card-btns button.btn-secondary {
+            background-color: #525F7F;
+        }
+
+        .card-shadow {
+            margin-top: 24px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 4px 0px #00000040;
+            white-space: break-spaces;
+            padding: 16px 8px;
+            max-width: 305px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #525F7F;
+        }
+
+        .card-shadow-title {
+            font-family: Poppins;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 27px;
+            letter-spacing: 2.7px;
+            text-align: center;
+        }
+
+        .card-shadow-subtext {
+            font-family: Poppins;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 25px;
+            letter-spacing: -0.3px;
+            text-align: center;
         }
     </style>
 </head>
+
 <body>
     <div class="card-container">
-
+        <div class="card-photo">
+            <div class="card-cover-photo"></div>
+            <div class="card-profile-photo"></div>
+        </div>
+        <div class="card-body">
+            <div class="card-title">
+                <div class="main-title">Ross Ankunding</div>
+                <div class="sub-title">Marketing Lead Tapify</div>
+            </div>
+            <div class="card-btns">
+                <button class="btn btn-primary">Message</button>
+                <button class="btn btn-secondary">Follow</button>
+            </div>
+            <div class="card-shadow">
+                <div class="card-shadow-title">About Me</div>
+                <div class="card-shadow-subtext">Hi! I possess a proven track record in driving growth, forging strategic partnerships, and maximizing revenue opportunities.</div>
+            </div>
+        </div>
     </div>
 </body>
+
 </html>
